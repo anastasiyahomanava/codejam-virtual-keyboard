@@ -1,3 +1,27 @@
+@-webkit-keyframes color-change {
+  0% {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+@keyframes color-change {
+  0% {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
 .keyboard-input {
   height: 250px;
   width: 60%;
@@ -11,11 +35,11 @@
   padding: 15px 0;
   background: #2c2c2c;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   -webkit-transition: bottom 0.4s;
   transition: bottom 0.4s;
 }
@@ -40,11 +64,11 @@
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   vertical-align: top;
   padding: 0;
   -webkit-tap-highlight-color: transparent;
@@ -53,6 +77,11 @@
 
 .keyboard__key:active {
   background: rgba(46, 58, 36, 0.288);
+}
+
+.keyboard__key:hover {
+  -webkit-animation: color-change 1.5s ease;
+          animation: color-change 1.5s ease;
 }
 
 .keyboard__key--wide {
@@ -78,5 +107,4 @@
 .keyboard__key--active::after {
   background: #d9ff00;
 }
-
 /*# sourceMappingURL=main.css.map */

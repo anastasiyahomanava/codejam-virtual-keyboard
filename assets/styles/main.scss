@@ -1,3 +1,9 @@
+@keyframes color-change {
+  0% { background-color: rgba(255, 255, 255, 0.3); }
+  50% { background-color: rgba(255, 255, 255, 0.4); }
+  100% { background-color: rgba(255, 255, 255, 0.5);}
+}
+
 .keyboard-input {
   height: 250px;
   width: 60%;
@@ -41,6 +47,10 @@
 
   &__key:active {
     background: rgba(46, 58, 36, 0.288);
+  }
+
+  &__key:hover {
+    animation: color-change 1.5s ease;
   }
 
   &__key--wide {
