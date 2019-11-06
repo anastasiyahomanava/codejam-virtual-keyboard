@@ -20,23 +20,23 @@
 
   &__key {
     height: 50px;
-  width: 6%;
-  max-width: 140px;
-  margin: 5px;
-  border-radius: 2px;
-  border: 1px solid #6e6e6e;
-  background: rgba(255, 255, 255, 0.2);
-  color: #ffffff;
-  font-size: 1.05rem;
-  outline: none;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  vertical-align: top;
-  padding: 0;
-  -webkit-tap-highlight-color: transparent;
-  position: relative;
+    width: 6%;
+    max-width: 140px;
+    margin: 5px;
+    border-radius: 2px;
+    border: 1px solid #6e6e6e;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    font-size: 1.05rem;
+    outline: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
   }
 
   &__key:active {
