@@ -1,3 +1,27 @@
+@-webkit-keyframes color-change {
+  0% {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+@keyframes color-change {
+  0% {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
 .keyboard-input {
   height: 250px;
   width: 60%;
@@ -53,6 +77,8 @@
 
 .keyboard__key:active {
   background: rgba(46, 58, 36, 0.288);
+  -webkit-animation: color-change 1.5s ease;
+          animation: color-change 1.5s ease;
 }
 
 .keyboard__key--wide {
