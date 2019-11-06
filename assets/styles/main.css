@@ -77,9 +77,6 @@
 
 .keyboard__key:active {
   background: rgba(46, 58, 36, 0.288);
-}
-
-.keyboard__key:hover {
   -webkit-animation: color-change 1.5s ease;
           animation: color-change 1.5s ease;
 }
